@@ -41,10 +41,8 @@ public class SwingPaint {
         content.setLayout(new BorderLayout());
         drawArea = new DrawArea();
 
-        // add to content pane
         content.add(drawArea, BorderLayout.CENTER);
 
-        // create controls to apply colors and call clear feature
         JPanel controls = new JPanel();
 
         clearBtn = new JButton("Clear");
@@ -60,7 +58,6 @@ public class SwingPaint {
         pinkBtn = new JButton("Pink");
         pinkBtn.addActionListener(actionListener);
 
-        // add to panel
         controls.add(greenBtn);
         controls.add(blueBtn);
         controls.add(blackBtn);
@@ -68,16 +65,12 @@ public class SwingPaint {
         controls.add(pinkBtn);
         controls.add(clearBtn);
 
-        // add to content pane
         content.add(controls, BorderLayout.NORTH);
 
         frame.setSize(1000, 600);
-        // can close frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // show the swing paint result
-        frame.setVisible(true);
+        frame.setVisible(true);        // Now you can try our Swing Paint !!! Enjoy <img draggable="false" class="emoji" alt="😀" src="https://s.w.org/images/core/emoji/11/svg/1f600.svg">
 
-        // Now you can try our Swing Paint !!! Enjoy <img draggable="false" class="emoji" alt="😀" src="https://s.w.org/images/core/emoji/11/svg/1f600.svg">
     }
 
 }
